@@ -66,13 +66,15 @@ The result: smarter, fairer, and more efficient parking pricing.
 
 ```mermaid
 graph TD
-    A[CSV Data Source (dataset.csv)] --> B[Pathway Streaming Engine]
-    B --> C[Model 1: Linear Pricing]
-    B --> D[Model 2: Demand-Based Pricing]
-    B --> E[Model 3: Competitive Model]
-    C --> F[Real-time Pricing Table]
+    A["CSV Data Source"] --> B["Pathway Streaming Engine"]
+    B --> C["Model 1: Linear Pricing"]
+    B --> D["Model 2: Demand-Based Pricing"]
+    B --> E["Model 3: Competitive Model"]
+    C --> F["Real-time Pricing Table"]
     D --> F
     E --> F
-    F --> G[Bokeh Visualization]
-    F --> H[Output as JSONL]
+    F --> G["Bokeh Visualization"]
+    F --> H["Output as JSONL"]
+```
+
 
